@@ -46,7 +46,7 @@
 ---
 
 ## 📂 제출 방법
-1. 작업 완료된 Unity 폴더를 압축하여 [이메일](mailto:recruit@onewavegames.com)로 제출해 주세요. (Library,temp,obj 등 불필요한 폴더 제외)
+1. 작업 완료된 Unity 폴더를 압축하여 recruit@onewavegames.com 으로 제출해 주세요. (Library,temp,obj 등 불필요한 폴더 제외)
 2. 프로젝트 폴더 구조를 유지하고, 간단한 프로그램 설명서(ex - 사용한 3rd파티 또는 sdk 를 기술하고 왜 사용 하였는가)를 포함 부탁드립니다.
 
 ---
@@ -57,4 +57,4 @@
 ---
 
 ## 📧 문의
-- 과제 관련 문의는 [이메일](mailto:recruit@onewavegames.com)을 통해 문의해 주세요.
+- 과제 관련 문의는 recruit@onewavegames.com 을 통해 문의해 주세요.
