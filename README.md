@@ -41,13 +41,18 @@
 ---
 # 🧩 제출 안내
 ## 📅 마감 기한
-- **메일 발신 날짜**로부터 **1주일 후**가 제출 기한입니다.
+- **메일 발신 날짜**로부터 **3일 후**가 제출 기한입니다.
 
 ---
 
 ## 📂 제출 방법
-1. 작업 완료된 Unity 폴더를 압축하여 recruit@onewavegames.com 으로 제출해 주세요. (Library,temp,obj 등 불필요한 폴더 제외)
-2. 프로젝트 폴더 구조를 유지하고, 간단한 프로그램 설명서(ex - 사용한 3rd파티 또는 sdk 를 기술하고 왜 사용 하였는가)를 포함 부탁드립니다.
+1. GitHub에 Unity 프로젝트를 위한 Repository를 생성해 주세요.
+2. 생성한 Repository에 작업 완료된 Unity 프로젝트를 업로드해 주세요.
+# Unity용 .gitignore 파일을 적용하여 Library, Temp, Obj 등 불필요한 파일 및 폴더는 제외해 주세요.
+3. 프로젝트에 대한 간단한 설명서를 README.md 파일에 작성해 주세요.
+# 사용한 서드파티 라이브러리나 SDK, 그리고 그것을 사용한 이유를 반드시 포함해 주세요.
+4. 완료 후, recruit@onewavegames.com 으로 GitHub Repository 주소를 보내주세요.
+
 
 ---
 
