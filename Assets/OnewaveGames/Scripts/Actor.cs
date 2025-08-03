@@ -6,6 +6,8 @@ public class Actor : MonoBehaviour
     protected ActorStat _acotrStat = new();
     protected Skill _skill;
 
+    public virtual void SetGameData() { }
+    
     public virtual void ApplySkill(Actor target) { }
 
     public void UpdateHp(int hp) => _acotrStat.UpdateHp(hp);

@@ -6,22 +6,18 @@ public class ActorBlitzcrank : Actor
     public PlayerInput playerInput;
 
     InputAction _moveAction;
-    InputAction _lookAction;
     InputAction _fireAction;
-
     CharacterData _characterData;
-
 
     void Awake()
     {
         var playerActionMap = playerInput.actions.FindActionMap("Player");
         _moveAction = playerActionMap.FindAction("Move");
-        _lookAction = playerActionMap.FindAction("Look");
         _fireAction = playerActionMap.FindAction("Fire");
         _fireAction.performed += Fire;
     }
 
-    void Start()
+    public override void SetGameData()
     {
         // 기획데이터 세팅
         _characterData = GameDataManager.Instance.GetCharacterData("blitzcrank");
@@ -29,6 +25,11 @@ public class ActorBlitzcrank : Actor
         _skill = new SkillBlitzcrank();
         _skill.Set();
         _dataReady = true;
+    }
+
+    void Start()
+    {
+        SetGameData();
     }
 
     void Update()
@@ -58,7 +59,6 @@ public class ActorBlitzcrank : Actor
 
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
         {
-
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
                 ApplySkill(hit.collider.transform.parent.GetComponent<Actor>());
