@@ -4,7 +4,12 @@ using UnityEngine;
 
 public abstract class Skill
 {
-    private List<Effect> EffectList {get;} = new();
+    protected CharacterSkillData _skillData;
 
-    public abstract bool ApplySkill(Actor source, Actor target);
+    protected List<Effect> _instantEffectList { get; } = new(); // 즉시 발동
+    protected List<Effect> _delayEffectList { get; } = new(); // 충돌 후 발동
+
+    public abstract bool ApplyInstantSkill(Actor source, Actor target);
+    public abstract bool ApplyDelaySkill(Actor source, Actor target);
+    public abstract void Set();    
 }

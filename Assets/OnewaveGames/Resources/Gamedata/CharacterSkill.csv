@@ -1,0 +1,2 @@
+id,name,costType,cost,cooltime,damage,projectile
+1,grab,Mp,50,1,5,grab
