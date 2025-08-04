@@ -26,10 +26,6 @@ public static class Utils
             jArray.Add(jObj);
         }
 
-        var a = JsonConvert.DeserializeObject<List<CharacterData>>(jArray.ToString());
-        var v = jArray.ToObject<List<T>>();
-        var n = JsonConvert.DeserializeObject<List<T>>(jArray.ToString());
-        var b = (List<T>)JsonConvert.DeserializeObject(jArray.ToString(), typeof(List<T>));
         return JsonConvert.DeserializeObject<List<T>>(jArray.ToString());
     }
 }
